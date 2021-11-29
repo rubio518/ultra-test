@@ -31,3 +31,8 @@ curl --location --request POST 'localhost:3000/games' \
     "publisher":{"id":1}
 }'
 ```
+
+to be able to insert a game you first need to insert a publisher directly into the database with the following code
+```sql
+insert into publisher (name, siret, phone) values ('publisher1',12, '+555111222');
+```
